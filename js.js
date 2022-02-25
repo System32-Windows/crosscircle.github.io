@@ -15,7 +15,14 @@ function start() {
 function klik(el_klikniety, ktory) {;
     if (kliki[ktory]) {
         if (gracz == 1) {
-            document.getElementById(el_klikniety)
+            document.getElementById(el_klikniety).innerHTML = krzyzyk
+            gracz = 2
+        } else {
+            if (gracz == 2) {
+                document.getElementById(el_klikniety).innerHTML = kolko
+                gracz = 1
+            }
         }
+        kliki[ktory] = false
     }
 };
