@@ -38,6 +38,7 @@ https://youtube.com/c/PanguśYT
         
         #przycisk1,
         #przycisk2 {
+            font-family: "Minecrafter";
             background-color: brown;
             color: beige;
             width: fit-content;
@@ -67,8 +68,19 @@ https://youtube.com/c/PanguśYT
         <div id="pole7" class="pole" onclick="klik(this.id, 7)"></div>
         <div id="pole8" class="pole" onclick="klik(this.id, 8)"></div>
         <div id="pole9" class="pole" onclick="klik(this.id, 9)"></div>
-        <div><button type="button" onclick="nowaGra()" id="przycisk1">Nowa gra</button><button type="button" onclick="location.reload()" id="przycisk2">Wyczyść wszystko</button></div>
+        <div><button type="button" onclick="nowaGra()" id="przycisk1">Nowa gra</button><button type="button" onclick="location.reload()" id="przycisk2">Reset</button></div>
     </div>
+    <div id="wyniki">
+        <h1 style="font-family: 'ElementarzDwa';">Gracz 1</h1>
+        <h1 id="gracz1" style="font-family: 'Minecrafter Alt';">0</h1>
+        <img src="g1.png">
+        <button type="button" onclick="add(1)">Dodaj punkt! Dla mnie, kotka kochanego!</button>
+        <br>
+        <h1 style="font-family: 'ElementarzDwa';">Gracz 2</h1>
+        <h1 id="gracz2" style="font-family: 'Minecrafter Alt';">0</h1>
+        <img src="g1.png">
+        <button type="button" onclick="add(2)">Dodaj punkt! Dla mnie, pieska! Pieski są inteligentne!</button>
+        <br></div>
 </body>
 
 </html>
