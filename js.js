@@ -1,11 +1,21 @@
-let cross, circle, gamer, polls, points1, points2, clicks = [];
+let krzyzyk, kolko, gracz, pola, punkty1, punkty2, kliki = [];
 
 function start() {
-    cross = "<img src='g1.png'>"
-    circle = "<img src='g2.png'>"
+    krzyzyk = "<img src='g1.png'>"
+    kolko = "<img src='g2.png'>"
+    gracz = 1;
+    punkty1 = 0;
+    punkty2 = 0;
+    for (let i = 1; i <= 9; i++) {
+        kliki[i] = true
+    }
 };
 
 
-function klik(id, number) {;
+function klik(el_klikniety, ktory) {;
+    if (kliki[ktory]) {
+        if (gracz == 1) {
 
+        }
+    }
 };
