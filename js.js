@@ -26,3 +26,15 @@ function klik(el_klikniety, ktory) {;
         kliki[ktory] = false
     }
 };
+
+function add(num) {
+    let gr1 = document.getElementById("gracz1")
+    let gr2 = document.getElementById("gracz2")
+    if (num == 1) {
+        punkty1++
+        gr1.innerHTML = punkty1.toString()
+    } else {
+        punkty2++
+        gr2.innerHTML = punkty2.toString()
+    }
+}
