@@ -15,7 +15,7 @@ function start() {
 function klik(el_klikniety, ktory) {;
     if (kliki[ktory]) {
         if (gracz == 1) {
-
+            document.getElementById(el_klikniety)
         }
     }
 };
