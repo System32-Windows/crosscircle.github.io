@@ -7,4 +7,5 @@ function start() {
 
 
 function klik(id, number) {;
+
 };
