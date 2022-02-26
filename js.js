@@ -4,15 +4,23 @@ function odlicz() {
     let _button = document.getElementById("przycisk1")
     let dzisiaj = new Date()
     let day = dzisiaj.getDay()
-    _button.innerHTML = "Za: " + day + "dni"
-    if (day < 5) {
+    _button.innerHTML = `Za: ${day} dni`
+    if (day == 7) {
         day--
+        _button.innerHTML = `Za: ${day} dni`
+    }
+
+    if (day == 1) {
+        day--
+        day--
+        _button.innerHTML = `Za: ${day} dni`
     }
 }
 
 
 
 function start() {
+
     krzyzyk = "<img src='g1.png'>";
     kolko = "<img src='g2.png'>";
     odlicz()
