@@ -38,3 +38,9 @@ function add(num) {
         gr2.innerHTML = punkty2.toString()
     }
 }
+
+function nowaGra() {
+    for (let i = 1; i <= 9; i++) {
+        kliki[i] = true
+    }
+}
