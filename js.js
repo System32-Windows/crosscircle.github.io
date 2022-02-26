@@ -1,8 +1,21 @@
 let krzyzyk, kolko, gracz, pola, punkty1, punkty2, kliki = [];
 
+function odlicz() {
+    let _button = document.getElementById("przycisk1")
+    let dzisiaj = new Date()
+    let day = dzisiaj.getDay()
+    _button.innerHTML = "Za: " + day + "dni"
+    if (day < 5) {
+        day--
+    }
+}
+
+
+
 function start() {
     krzyzyk = "<img src='g1.png'>";
     kolko = "<img src='g2.png'>";
+    odlicz()
     gracz = 1;
     punkty1 = 0;
     punkty2 = 0;
